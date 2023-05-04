@@ -10,7 +10,7 @@ public class SortingTheElements {
 
         System.out.println("Enter the elements of the array : ");
 
-        for (int i = 0; i < list.length; i++) {
+        for (int i = 0; i < list.length; i++) { //With this loop, I taking the elemnts of array from the user one by one.
             System.out.print((i + 1) + ". Elements = ");
             list [i] = input.nextInt();
         }
@@ -19,10 +19,10 @@ public class SortingTheElements {
 
     }
 
-    public static void sorting (int [] list) {
+    public static void sorting (int [] list) { //With this method, I sort the elemts.
         for(int i = 0; i < list.length; i++) {
-            int min = list[i];
-            int minIndex = i;
+            int min = list[i]; //With this synchronization, I assign the smallest element to the first index.
+            int minIndex = i; //And this synchronization is used to assign the smallest index to i.
 
             for (int j = i + 1; j < list.length; j++) {
                 if (list[j] < min) {
